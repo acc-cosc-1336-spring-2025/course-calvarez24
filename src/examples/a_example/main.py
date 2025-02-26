@@ -1,5 +1,8 @@
 import devprocess
 
-#result = devprocess.add_numbers(5, 5)
+def main():
+    result = devprocess.add_numbers(5, 3) #create the result variable and store the return value of 5,3 in add_numbers
+    print(result)
 
-devprocess.hello()
+main() #run the main function which calls/uses the add_numbers functions that's in a devprocess.py file
+
