@@ -14,3 +14,15 @@ class Test_Config(unittest.TestCase):
         self.assertEqual('Good', get_faculty_rating(0.71))
         self.assertEqual('Needs Improvement', get_faculty_rating(0.66))
         self.assertEqual('Unacceptable', get_faculty_rating(0.45))
+
+import unittest 
+from src.homework.c_decisions.decisions import sum_odd_numbers
+
+class TestSumOddNumbers(unittest.TestCase):
+    def test_sum_odd_positive(self):
+        self.assertEqual(sum_odd_numbers(7), 16)
+    def test_sum_odd_zero(self):
+        self.assertEqual(sum_odd_numbers(9), 25)
+    def test_sum_odd_one(self):
+        self.assertEqual(sum_odd_numbers(10), 25)
+            

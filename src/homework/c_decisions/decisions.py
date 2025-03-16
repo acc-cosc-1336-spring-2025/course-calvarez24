@@ -15,3 +15,12 @@ def get_faculty_rating(x):
         return "Unacceptable"
     else:
         rating = "Invalid Ratio"
+
+def sum_odd_numbers(num):
+    sum = 0
+    i = 1
+    while 1 <= num:
+        if i % 2 != 0:
+            sum += i
+        i += 1
+    return sum
