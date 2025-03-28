@@ -1,6 +1,7 @@
 import strings
 
 def main():
-    strings.string_access_a_character()
+    lang = "Cpp"
+    print(lang.upper()) #capitalized p
 
 main()
