@@ -9,3 +9,5 @@ def string_access_a_character():
     print(lang[0]) 
     print(lang[1])
     print(lang[2])
+
+    lang[0] = 'c' #cannot modify individual characters in string
