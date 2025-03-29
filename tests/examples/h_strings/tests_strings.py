@@ -40,3 +40,11 @@ class Test_Config(unittest.TestCase):
         lang = "C++\n\n\n\n"
         new_text = lang.rstrip('\n')
         self.assertEqual("C++", new_text)
+
+    def test_string_repetition_operator(self):
+        str = 'w' * 5
+
+        self.assertEqual('wwwww', str)
+
+
+    def 
