@@ -34,3 +34,29 @@ def loop_a_string_with_for():
     for ch in lang: #ch = character
         print(ch)
 
+def validate_password(password):
+    is_valid = False
+    correct_length = False
+    has_upper_case = False
+    has_lower_case = False
+    has_digit = False
+
+    if(len(password)) >= 7:
+        correct_length = True
+    
+        for ch in password:
+            if ch.isupper():
+                has_upper_case = True
+            if ch.islower():
+                has_lower_case = True
+            if ch.isdigit():
+                has_digit = True
+            
+        if correct_length and has_upper_case and \
+            has_lower_case and has_digit:
+            is_valid = True 
+        else:
+            is_valid = False
+
+    return is_valid
+    

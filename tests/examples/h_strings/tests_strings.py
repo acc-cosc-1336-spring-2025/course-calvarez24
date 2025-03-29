@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.h_strings.strings import test_config
+from src.examples.h_strings.strings import test_config, validate_password
 
 class Test_Config(unittest.TestCase):
 
@@ -47,4 +47,28 @@ class Test_Config(unittest.TestCase):
         self.assertEqual('wwwww', str)
 
 
-    def 
+    def test_split_string(self):
+        text = 'Four score and seven years ago'
+        list1 = text.split()
+
+        self.assertEqual(['Four', 'score', 'and', 'seven', 'years', 'ago'], list1)
+
+    def test_split_string_date(self):
+        date1 = '10/08/2024'
+        list1 = date1.split('/')
+        expected_list = ['10' , '08' , '2024'] #these results are called tokens
+                            
+        self.assertEqual(expected_list, list1)
+
+    def test_validate_password1(self):
+        password = '1234ABCd'
+
+        self.assertEqual(True, validate_password(password))
+
+    def test_validate_password2(self):
+        password = '1234Ab'
+
+        self.assertEqual(False, validate_password(password))
+
+
+
