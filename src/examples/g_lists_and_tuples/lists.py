@@ -12,3 +12,4 @@ def create_array2():
 
     for num in nums:
         print(num)
+
