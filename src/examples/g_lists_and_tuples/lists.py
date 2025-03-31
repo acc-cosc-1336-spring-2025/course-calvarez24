@@ -83,3 +83,8 @@ def create_list():
         print(item)
 
 
+def list_of_car_parts():
+    car_parts = ["brake pads", "oil filter", "air filter"]
+
+    print("here are the car parts that need to be checked", car_parts)
+    
