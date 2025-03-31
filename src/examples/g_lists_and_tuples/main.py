@@ -1,6 +1,15 @@
 import lists
 
 def main():
-    lists.create_array1() 
-    lists.create_array2()
+    #lists.create_array1() 
+    #lists.create_array2()
+    #lists.access_array_elements()
+    #lists.loop_array_elements_while()
+    #lists.loop_array_elements_for_range()
+    #lists.modify_array_element1()
+    #lists.modify_array_element2()
+    #lists.add_array_elements()
+    #lists.delete_array_elements()
+    #lists.get_total_of_array_elements()
+    lists.array_of_characters()
 main()
