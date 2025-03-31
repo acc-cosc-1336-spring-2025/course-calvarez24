@@ -74,4 +74,12 @@ def get_total_of_array_elements():
         
     return total
 
-def 
+def create_list():
+    list = [1, 'bb' , 5.5, True]
+
+    print(list)
+
+    for item in list:
+        print(item)
+
+
