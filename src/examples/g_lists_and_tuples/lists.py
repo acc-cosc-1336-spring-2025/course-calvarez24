@@ -83,28 +83,7 @@ def create_list():
         print(item)
 
 
-def list_of_car_parts():
-    car_parts = ["brake pads", "oil filter", "air filter"]
 
-    print("Here are the car parts that need to be checked:", car_parts)
-    
-    #accessing the first item in the list
-    print("The first part to check is:", car_parts[0])
-    
-    #update the 'air filter' part to 'cabin air filter'
-    car_parts[2] = "cabin air filter"
-    print("Update list of car parts:", car_parts)
-    
-    #adding a new part to the list
-    car_parts.append("battery")
 
-    #removing an item from the list
-    car_parts.remove("oil filter")
-    print("Update list of car parts:", car_parts)
-
-    #loop through the list of parts 
-    print("Parts to check during service:")
-    for part in car_parts:
-        print(part)
 
     
