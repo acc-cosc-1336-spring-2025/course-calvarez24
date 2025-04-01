@@ -12,6 +12,6 @@ def main():
     #lists.delete_array_elements()
     #lists.get_total_of_array_elements()
     #lists.array_of_characters()
-    #lists.create_list()
-    lists.list_of_car_parts()
+    lists.create_list()
+    #lists.list_of_car_parts()
 main()

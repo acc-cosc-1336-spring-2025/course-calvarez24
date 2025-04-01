@@ -1,4 +1,7 @@
 
+from homework.h_strings.strings import get_dna_complement, get_hamming_distance
+
+
 def main():
         while True:
             print("\n1-Hamming Distance")
