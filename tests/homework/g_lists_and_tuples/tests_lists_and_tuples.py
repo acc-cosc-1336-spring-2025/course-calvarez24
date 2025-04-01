@@ -35,3 +35,18 @@ class Test_Config(unittest.TestCase):
         list1[0] = 20
 
         self.assertEqual(False, list1 == list2)
+
+    def test_list_concatenate(self):
+        list1 = [5, 4, 10]
+        list2 = []
+        list3 = list1 + list2 #creates a completely new list
+
+        self.assertEqual(True, list1 == list3) #true because both lists have values 5,4,10
+
+        list1[0] = 20
+
+        self.assertEqual(False, list1 == list3)
+
+        self.assertEqual(False, list1[0] == list3[0])
+
+    
