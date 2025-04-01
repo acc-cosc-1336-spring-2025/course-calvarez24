@@ -49,4 +49,13 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(False, list1[0] == list3[0])
 
-    
+    def test_list_repetition_operator(self):
+        list1 = [0] * 5
+        expected_list = [0,0,0,0,0]
+
+        self.assertEqual(True, list1 == expected_list)
+
+        list1 = [1,2,3] * 2
+        expected_list = [1,2,3,1,2,3]
+
+        self.assertEqual(True, list1 == expected_list)
