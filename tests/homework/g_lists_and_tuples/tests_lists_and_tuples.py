@@ -21,4 +21,17 @@ class Test_Config(unittest.TestCase):
 
         #self.assertEqual(True, list1 != list2)
 
-        self.assertEqual(False, list1[0] == list2[0])
+        self.assertEqual(True, list1[0] == list2[0])
+
+    def test_list_copy_w_loop(self):
+        list1 = [5, 4, 10]
+        list2 = []
+    
+        for item in list1:
+            list2.append(item) #append adds a single element to the list
+
+        self.assertEqual(True, list1 == list2) #is it comparing values or memory location
+
+        list1[0] = 20
+
+        self.assertEqual(False, list1 == list2)
