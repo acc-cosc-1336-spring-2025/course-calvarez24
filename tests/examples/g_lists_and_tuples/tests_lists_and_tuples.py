@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.g_lists_and_tuples.lists import get_total_of_array_elements, list_as_return_value_no_param, list_as_return_values, list_as_return_values, test_config, use_list_as_parameter
+from src.examples.g_lists_and_tuples.lists import get_the_total_values_of_list_items_while, get_total_of_array_elements, list_as_return_value_no_param, list_as_return_values, list_as_return_values, test_config, use_list_as_parameter
 
 class Test_Config(unittest.TestCase):
 
@@ -121,5 +121,8 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(True, list_address1 == list_address2)
 
+    def test_get_the_total_values_of_list_items_while(self):
+        result = get_the_total_values_of_list_items_while()
 
+        self.assertEqual(result, 30)
     
