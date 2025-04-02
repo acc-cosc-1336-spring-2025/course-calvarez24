@@ -103,6 +103,7 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, num == 1) #will not equal 25
         self.assertEqual(True, list1[0] == 100)
 
+    #points to the same list, same variables 
     def test_list_as_return_value(self):
         list1 = [5, 3, 10]
 
@@ -111,6 +112,6 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, list1 == return_list)
         self.assertEqual(True, list1[0] == 100)
         self.assertEqual(True, return_list[0] == 100)
-        self.assertEqual(True, list[0] == return_list[0])
+        self.assertEqual(True, list1[0] == return_list[0])
 
     

@@ -90,5 +90,5 @@ def use_list_as_parameter(list1, num):
 def list_as_return_values(list1):
     list1[0] = 100
 
-    return list1
+    return list1 #because we're modifying the list, this return list1 is unnecessary 
     
