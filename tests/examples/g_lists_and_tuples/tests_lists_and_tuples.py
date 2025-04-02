@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.g_lists_and_tuples.lists import get_total_of_array_elements, test_config
+from src.examples.g_lists_and_tuples.lists import get_total_of_array_elements, list_as_return_values, list_as_return_values, test_config, use_list_as_parameter
 
 class Test_Config(unittest.TestCase):
 
@@ -93,3 +93,24 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, prod_nums == expected_list)  
 
         #if we try to remove something that doesn't exist it gives us an error 
+
+    def test_list_as_function_parameters(self):
+        num = 1 #this num is the same as the num in use_list_as_parameter
+        list1 = [5, 3, 10]
+
+        use_list_as_parameter(list1, num) #this num is 25
+
+        self.assertEqual(True, num == 1) #will not equal 25
+        self.assertEqual(True, list1[0] == 100)
+
+    def test_list_as_return_value(self):
+        list1 = [5, 3, 10]
+
+        return_list = list_as_return_values(list1)
+
+        self.assertEqual(True, list1 == return_list)
+        self.assertEqual(True, list1[0] == 100)
+        self.assertEqual(True, return_list[0] == 100)
+        self.assertEqual(True, list[0] == return_list[0])
+
+    
