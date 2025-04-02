@@ -72,3 +72,24 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, 'v475'not in prod_nums)
         self.assertEqual(False, 'V475'not in prod_nums)
     
+    def test_list_clear_items(self):
+        list1 = prod_nums = ['V475', 'F987', 'Q143', 'R688']
+        prod_nums.clear() #clears the item in the list
+
+        self.assertEqual(True, prod_nums == []) #brackets represent the empty list
+
+    def test_list_sort_function(self):
+        prod_nums = ['V475', 'F987', 'Q143', 'R688']
+        prod_nums.sort()
+        expected_list = ['F987', 'Q143', 'R688', 'V475']
+
+        self.assertEqual(True, prod_nums == expected_list)
+
+    def test_list_remove_item(self):
+        prod_nums = ['V475', 'F987', 'Q143', 'R688']
+        prod_nums.remove('F987')
+        expected_list =  ['V475', 'Q143', 'R688']    
+
+        self.assertEqual(True, prod_nums == expected_list)  
+
+        #if we try to remove something that doesn't exist it gives us an error 
