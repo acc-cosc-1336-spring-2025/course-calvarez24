@@ -91,4 +91,10 @@ def list_as_return_values(list1):
     list1[0] = 100
 
     return list1 #because we're modifying the list, this return list1 is unnecessary 
+
+def list_as_return_value_no_param():
+    list1 = [5, 3, 10]
+
+
+    return list1, id(list1) #return list and address of where its located at
     

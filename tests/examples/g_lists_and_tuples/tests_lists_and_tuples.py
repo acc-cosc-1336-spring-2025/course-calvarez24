@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.g_lists_and_tuples.lists import get_total_of_array_elements, list_as_return_values, list_as_return_values, test_config, use_list_as_parameter
+from src.examples.g_lists_and_tuples.lists import get_total_of_array_elements, list_as_return_value_no_param, list_as_return_values, list_as_return_values, test_config, use_list_as_parameter
 
 class Test_Config(unittest.TestCase):
 
@@ -113,5 +113,13 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(True, list1[0] == 100)
         self.assertEqual(True, return_list[0] == 100)
         self.assertEqual(True, list1[0] == return_list[0])
+
+    def test_list_as_return_value_no_param(self):
+        return_list, list_address1 = list_as_return_value_no_param()
+        list_address2 = id(return_list)
+
+
+        self.assertEqual(True, list_address1 == list_address2)
+
 
     
