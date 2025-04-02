@@ -118,3 +118,13 @@ def get_the_total_values_of_list_items_for_range():
             total += list1[i]
 
     return total
+
+def get_total_values_of_list_items_for():
+    total = 0
+    list1 = [2, 4, 6, 8, 10]
+
+    for item in list1:
+        total += item
+
+    return total
+
