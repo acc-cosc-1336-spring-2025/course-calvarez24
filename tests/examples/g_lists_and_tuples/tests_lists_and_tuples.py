@@ -136,3 +136,15 @@ class Test_Config(unittest.TestCase):
 
         
         self.assertEqual(result, 30)
+
+    def test_two_dimensional_list_indexing(self):
+        list2 = [1, 2, 3]
+        list3 = [4, 5, 6]
+        list4 = [7, 8, 9]
+
+        list1 = [list2, list3, list4]
+
+        self.assertEqual(3, list1[0][2])
+        self.assertEqual(8, list1[2][1])
+
+        

@@ -123,7 +123,7 @@ def get_total_values_of_list_items_for():
     total = 0
     list1 = [2, 4, 6, 8, 10]
 
-    for item in list1:
+    for item in list1: #for every item in list1
         total += item
 
     return total
