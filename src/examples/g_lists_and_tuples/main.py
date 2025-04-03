@@ -15,7 +15,7 @@ def main():
     lists.create_list()
     #lists.list_of_car_parts()
 
-def main():
+#def main():
     prod_nums = ['V475', 'F987', 'Q143', 'R688']
 
     item = input("Enter item:")
@@ -28,6 +28,10 @@ def main():
 
     print(prod_nums)
 
+def main():
+    table = lists.get_multiplication_table(10, 10)
+
+    lists.display_multiplication_table(table)
 
 
 main()

@@ -128,3 +128,23 @@ def get_total_values_of_list_items_for():
 
     return total
 
+def get_multiplication_table(rows, cols):
+    list =[]
+
+    for i in range(0, rows): #loop all rows
+        row_list = []
+
+        for j in range(0, cols): #loop all columns 
+            row_list.append((i + 1) * (j + 1))
+
+        list.append(row_list)
+
+    return list
+
+def display_multiplication_table(list): #takes a list, u iterate thru the elements and display one element at a time
+
+    for row_list in list:
+        for product in row_list:
+            print(str(product).rjust(3, " "), end = " ")
+
+        print(" ")
