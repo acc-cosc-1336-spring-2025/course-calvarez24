@@ -20,3 +20,5 @@ def store_different_data_in_tuple():
 
     for item in tuple:
         print(item)
+
+        
