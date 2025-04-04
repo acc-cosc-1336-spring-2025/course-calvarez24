@@ -160,4 +160,18 @@ def display_employee_payroll_list(payroll_list):
     for employee in payroll_list:
         print(employee[0], employee[1], employee[2], employee[3])
 
-        
+def calculate_student_grades(class_list):
+
+    for student in class_list:
+        lowest = min(student[1])
+        student[2] = (get_grades_total(student[1])-lowest) / (len(student[1])-1)
+
+
+def get_grades_total(grade_list):
+    total = 0
+
+    for grade in grade_list:
+        total += grade 
+
+    return total
+

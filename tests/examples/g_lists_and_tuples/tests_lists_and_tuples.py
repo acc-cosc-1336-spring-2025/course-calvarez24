@@ -1,6 +1,6 @@
 import unittest
 
-from src.examples.g_lists_and_tuples.lists import get_the_total_values_of_list_items_for_range, get_the_total_values_of_list_items_while, get_total_of_array_elements, get_total_values_of_list_items_for, list_as_return_value_no_param, list_as_return_values, list_as_return_values, test_config, use_list_as_parameter
+from src.examples.g_lists_and_tuples.lists import get_grades_total, get_the_total_values_of_list_items_for_range, get_the_total_values_of_list_items_while, get_total_of_array_elements, get_total_values_of_list_items_for, list_as_return_value_no_param, list_as_return_values, list_as_return_values, test_config, use_list_as_parameter
 
 class Test_Config(unittest.TestCase):
 
@@ -173,3 +173,9 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(expected_tuple, tuple1)
 
+
+    def test_get_grade_total(self):
+        grades = [70, 80, 100, 100]
+        total = get_grades_total(grades)
+
+        self.assertEqual(350, total)
