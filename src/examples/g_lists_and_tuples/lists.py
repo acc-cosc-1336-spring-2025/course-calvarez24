@@ -148,3 +148,5 @@ def display_multiplication_table(list): #takes a list, u iterate thru the elemen
             print(str(product).rjust(3, " "), end = " ")
 
         print(" ")
+
+    

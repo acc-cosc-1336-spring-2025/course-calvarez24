@@ -158,3 +158,18 @@ class Test_Config(unittest.TestCase):
         tuple[2].append(10)
 
         self.assertEqual(10, tuple[2][3])
+
+    def test_convert_tuple_to_list(self):
+        tuple = (4, 1, 9)
+        list1 = list(tuple)
+        expected_list = [4, 1, 9]
+
+        self.assertEqual(expected_list, list1)
+
+    def test_convert_list_to_tuple(self):
+        list1 = [8, 1, 0]
+        tuple1 = tuple(list1)
+        expected_tuple = (8, 1, 0)
+
+        self.assertEqual(expected_tuple, tuple1)
+
