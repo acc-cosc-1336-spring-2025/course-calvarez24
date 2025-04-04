@@ -34,8 +34,10 @@ def main():
 
     lists.display_multiplication_table(table)
 
-def main():
+#def main():
     tuples.create_a_tuple()
 
+def main():
+    tuples.store_different_data_in_tuple()
 
 main()
