@@ -149,4 +149,15 @@ def display_multiplication_table(list): #takes a list, u iterate thru the elemen
 
         print(" ")
 
-    
+def calculate_employee_gross_pay(payroll_list):
+
+    for employee in payroll_list:
+        employee[3] = employee[1] * employee[2]
+
+
+def display_employee_payroll_list(payroll_list):
+
+    for employee in payroll_list:
+        print(employee[0], employee[1], employee[2], employee[3])
+
+        
