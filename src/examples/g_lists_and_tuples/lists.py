@@ -136,8 +136,8 @@ def get_multiplication_table(rows, cols):
 
         for j in range(0, cols): #loop all columns 
             row_list.append((i + 1) * (j + 1))
-
-        list.append(row_list)
+  
+        list.append(row_list) #adds each row (row_list) to the master list (list)
 
     return list
 

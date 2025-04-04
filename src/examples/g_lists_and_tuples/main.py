@@ -1,4 +1,5 @@
-import lists
+#import lists
+import tuples
 
 def main():
     #lists.create_array1() 
@@ -12,7 +13,7 @@ def main():
     #lists.delete_array_elements()
     #lists.get_total_of_array_elements()
     #lists.array_of_characters()
-    lists.create_list()
+    #lists.create_list()
     #lists.list_of_car_parts()
 
 #def main():
@@ -28,10 +29,13 @@ def main():
 
     print(prod_nums)
 
-def main():
+#def main():
     table = lists.get_multiplication_table(10, 10)
 
     lists.display_multiplication_table(table)
+
+def main():
+    tuples.create_a_tuple()
 
 
 main()
