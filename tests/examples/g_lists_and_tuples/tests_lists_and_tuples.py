@@ -179,3 +179,5 @@ class Test_Config(unittest.TestCase):
         total = get_grades_total(grades)
 
         self.assertEqual(350, total)
+
+    
