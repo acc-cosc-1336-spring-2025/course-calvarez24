@@ -8,4 +8,8 @@ def use_a_dictionary():
     print(phonebook['555-2222']) #finds the value, outputs Katie, keys work as indexs
     print(phonebook['555-1111'])
     print(phonebook['555-3333'])
-    #print(phonebook['555-4444']) #not a key, we get a key error 
+
+    if('555-4444' in phonebook):
+        print(phonebook['555-4444']) 
+    else:
+        print('Key does not exist')
