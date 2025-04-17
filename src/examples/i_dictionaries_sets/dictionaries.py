@@ -26,3 +26,15 @@ def add_key_value_pair():
         print(key, " already exists.")
 
     print(phonebook)
+
+def delete_key_value_pair():
+    phonebook = {'555-1111':'Chris', '555-2222':'Katie', '555-3333':'Jack'}
+
+    key = input("Enter the key: ")
+    
+    if key in phonebook:
+        del phonebook[key]
+    else:
+        print("Key ", key, " does not exist.")
+
+    print(phonebook)
