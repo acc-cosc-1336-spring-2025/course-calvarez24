@@ -2,6 +2,6 @@
 import dictionaries
 
 def main():
-    dictionaries.use_a_dictionary()
+    dictionaries.add_key_value_pair()
 
 main()
