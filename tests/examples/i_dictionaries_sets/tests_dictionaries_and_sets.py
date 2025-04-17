@@ -30,3 +30,20 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(phonebook, expected_phonebook)
 
+    def test_update_value_dictionary(self):
+        phonebook = {'555-1111':'Chris', '555-2222':'Katie', '555-3333':'Jack'}
+        expected_phonebook = {'555-1111':'Crisis', '555-2222':'Katie', '555-3333':'Jack'}
+
+        key = '555-1111'
+        value = 'Crisis'
+
+        if key in phonebook:
+            phonebook[key] = value
+
+        self.assertEqual(phonebook, expected_phonebook)
+
+        
+
+
+
+
