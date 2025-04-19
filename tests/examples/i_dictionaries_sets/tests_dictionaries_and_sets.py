@@ -42,8 +42,18 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(phonebook, expected_phonebook)
 
-        
+    def test_get_number_of_elements_dictionary(self):
+        phonebook = {'555-1111':'Chris', '555-2222':'Katie', '555-3333':'Jack'}
+        key_value_count = len(phonebook)
 
+        self.assertEqual(3, key_value_count)
+
+    def test_different_data_type_values(self):
+        test_scores = {'123':[88,92,100], '456':95, '789':'dropped'}        
+        expected_list = [88,92,100]
+        list1 = test_scores['123']
+
+        self.assertEqual(list1, expected_list)
 
 
 
