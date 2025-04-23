@@ -105,4 +105,17 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(expected_set, symm_diff_set)
 
+    def test_is_subset(self):
+        set1 = ([1,2,3,4])
+        set2 = set([2,3])
+
+        self.assertEqual(True, set2.issubset(set1))
+
+    def test_is_superset(self):
+        set1 = {1,2,3,4}
+        set2 = {2,3}
+
+        self.assertEqual(True, set1.issuperset(set2))
+
+    
 
