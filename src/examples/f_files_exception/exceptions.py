@@ -39,7 +39,19 @@ def multiply_two_numbers_validate():
 
     print(result)
 
-def 
+def open_file_for_reading(file_name):
+
+    try:
+        file = open(file_name, 'r')
+
+        contents = file.read()
+
+        print(contents)
+
+        file.close()
+    except IOError:
+        print('Cannot read the file, not found...', file_name)
+
 
 
 
