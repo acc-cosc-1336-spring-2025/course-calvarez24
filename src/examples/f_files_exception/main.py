@@ -1,10 +1,12 @@
 #main program
 
-import files
+import exceptions
 
 def main():
-    file_name = 'pickle_dictionary.bin'
-    files.read_dictionary_from_file(file_name)
-    
+    result = exceptions.divide_two_numbers(6,2)
+    print(result)
+
+    result = exceptions.divide_two_numbers(3,0)
+    print(result)
 
 main()
