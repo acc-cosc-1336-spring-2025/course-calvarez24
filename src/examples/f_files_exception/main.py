@@ -3,7 +3,8 @@
 import files
 
 def main():
-    file_name = 'lang.txt'
-    files.read_list_of_lists_file(file_name)
+    file_name = 'lang_dictionary.txt'
+    files.read_dictionary_records(file_name)
+    
 
 main()
