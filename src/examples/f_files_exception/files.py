@@ -36,6 +36,37 @@ def read_from_file_w_a_loop(file_name):
 
     file.close()
 
+def write_sales_data(file_name):
+    file = open(file_name, 'w')
+
+    num1 = 0
+
+    while num1 != 'n':
+        num1 = input("Enter sales data: ")
+
+        if(num1 != 'n'):
+            file.write(num1 + '\n')
+
+    file.close()
+
+def read_sales_data(file_name):
+    file = open(file_name, 'r')
+    line = file.readline()
+
+    total = 0
+
+    while line != '':
+        amount = int(line)
+        total += amount 
+        print(amount)
+
+        line = file.readline()
+
+    file.close()
+    print()
+    print(total)
+
+
 
 
 
