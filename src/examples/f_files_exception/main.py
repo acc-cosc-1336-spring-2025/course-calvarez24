@@ -3,7 +3,7 @@
 import files
 
 def main():
-    file_name = 'employees.txt'
-    files.read_employee_record(file_name)
+    file_name = 'lang.txt'
+    files.read_list_of_lists_file(file_name)
 
 main()

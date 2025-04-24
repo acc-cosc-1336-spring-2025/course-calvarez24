@@ -97,7 +97,39 @@ def read_employee_record(file_name):
 
     file.close()
 
-    
+def write_list_of_lists(file_name):
+    file = open(file_name, 'w')
+
+    prog_langs = [['1', 'C++', 'Prog'], ['2', 'Python', 'Prog'], ['3', 'Java', 'Prog']]
+
+    for lang in prog_langs:
+        file.write(lang[0] + '\t')
+        file.write(lang[1] + '\t')
+        file.write(lang[2] + '\n')
+
+    file.close()
+
+def read_list_of_lists_file(file_name):
+    file = open(file_name, 'r')
+
+    list_langs = []
+
+    for line in file:
+        record = line.split('\t')
+        id = record[0]
+        name = record[1]
+        department = record[2].rstrip('\n')
+
+        employee_list = [id, name, department]
+
+        list_langs.append(employee_list)
+
+    file.close()
+
+    for employee in list_langs:
+        print(employee[0], employee[1], employee[2])
+
+
 
 
 
