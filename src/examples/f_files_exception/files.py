@@ -66,6 +66,41 @@ def read_sales_data(file_name):
     print()
     print(total)
 
+def write_employee_records(file_name):
+    file = open(file_name, 'w')
+
+    choice = '1'
+
+    while choice == '1':
+        id = input('Enter ID: ')
+        name = input('Enter name: ')
+        department = input('Enter department: ')
+
+        file.write(id + '\t')
+        file.write(name + '\t')
+        file.write(department + '\n')
+
+        choice = input('Enter 1 to continue')
+
+    file.close()
+
+def read_employee_record(file_name):
+    file = open(file_name, 'r')
+
+    for line in file:
+        record = line.split('\t') #['3', 'C++', 'Prog']
+        id = record[0]
+        name = record[1]
+        department = record[2].rstrip('\n')
+
+        print(id, name, department)
+
+    file.close()
+
+    
+
+
+
 
 
 
