@@ -1,7 +1,7 @@
 import unittest
 
 
-from tests.examples.i_dictionaries_sets import tests_dictionaries_and_sets
+from tests.examples.f_files_exception import tests_files_exception
 
-suite = unittest.TestLoader().loadTestsFromModule(tests_dictionaries_and_sets)
+suite = unittest.TestLoader().loadTestsFromModule(tests_files_exception)
 unittest.TextTestRunner(verbosity=2).run(suite)  
