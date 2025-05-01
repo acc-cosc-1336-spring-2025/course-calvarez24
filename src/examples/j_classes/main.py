@@ -9,4 +9,9 @@ def main():
     
     print(account.get_balance())
 
+    amt = int(input("Enter withdraw amount: "))
+    account.withdraw(50)
+
+    print(account.get_balance())
+
 main()
