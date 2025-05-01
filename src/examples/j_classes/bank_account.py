@@ -1,8 +1,8 @@
 class BankAccount:
 
-    __balance = 100 #class variable-attributes-class data
+    __balance = 100 #class variable-attributes-class data PRIVATE
 
-    #constructor 
+    #constructor -- special function
     def __init__(self, balance):
         self.__balance = balance
 
