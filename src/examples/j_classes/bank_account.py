@@ -1,6 +1,7 @@
 class BankAccount:
 
     __balance = 0 #class variable-attributes-class data __ means its private, needs to be protected
+    __cust_id = 123456
 
     #constructor -- special function
     def __init__(self, balance):
