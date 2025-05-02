@@ -1,5 +1,6 @@
 import unittest
 
+from src.examples.j_classes.account_free_functions import make_deposit
 from src.examples.j_classes.bank_account import BankAccount
 
 class Test_Config(unittest.TestCase):
@@ -48,3 +49,9 @@ class Test_Config(unittest.TestCase):
         account.deposit(100)
         self.assertEqual(1000, account.get_balance())
 
+    def test_account_object_as_parameter(self):
+        account = BankAccount(500)
+        self.assertEqual(500, account.get_balance())
+
+        make_deposit(account)
+        self.assertEqual(600, account.get_balance())
