@@ -1,7 +1,7 @@
 class ATM:
 
-    def __init__(self, account):
-        self.__account = account
+    def __init__(self, customer):
+        self.__account = customer.get_bank_account()
     
     def display_balance(self):
         print(self.__account.get_balance())
