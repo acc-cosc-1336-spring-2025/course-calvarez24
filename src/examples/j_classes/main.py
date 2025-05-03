@@ -7,15 +7,9 @@ def main():
     print(account.get_balance())
 
     auto_teller = atm.ATM(account)
-    auto_teller.display_balance()
 
-    auto_teller.make_deposit()
-    auto_teller.display_balance()
+    atm.run_menu(auto_teller)
+
     print(account.get_balance())
 
-    auto_teller.make_withdraw()
-    auto_teller.display_balance()
-    print(account.get_balance())
-
-    
 main()
