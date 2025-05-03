@@ -65,6 +65,12 @@ class Test_Config(unittest.TestCase):
 
         self.assertEqual(500, account.get_balance())
 
+    def test_account_get_balance_from_db(self):
+        account = BankAccount(0)
+
+        self.assertEqual(True, account.get_balance() >= 1)
+        self.assertEqual(True, account.get_balance() <= 10000)
+
 
 
         
